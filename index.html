@@ -1,148 +1,159 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meta Marketing</title>
-
-  <!-- 🔷 CSS ফাইল -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- 🔷 Font Awesome (আইকন এর জন্য) -->
+    <meta charset="UTF-8">
+    <title>Meta Marketing</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome আইকন ব্যবহার করার জন্য CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
 
-  <!-- হোম সেকশনের জন্য কভার ব্যাকগ্রাউন্ড -->
-<section class="hero-section">
-</section>
+    <!-- 🔹 ন্যাভবার শুরু -->
+    <header>
+        <nav>
+            <h1 class="logo">Meta Marketing</h1>
+            <ul>
+                <li><a href="#home">হোম</a></li>
+                <li><a href="#about">কাজ সম্পর্কে</a></li>
+                <li><a href="#projects">যোগ দিন</a></li>
+                <li><a href="#contact">আরও</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- 🔷 HERO SECTION -->
-<section class="hero">
-  <div class="hero-content">
+  <!-- টিকার মূল কন্টেইনার -->
+  <div class="ticker">
 
-  <h1>📱 ফোন দিয়েই অনলাইনে আয় শুরু করুন 💸</h1>
+    <!-- টেক্সটগুলো স্ক্রল করার জন্য ট্র্যাক -->
+    <div class="ticker-track">
 
-  <p class="subtitle">
-    শুধু ফেসবুক ও ইনস্টাগ্রাম আইডি খুলেই প্রতিদিন আয় করুন
-  </p>
+      <!-- প্রথম টেক্সট -->
+      <div class="ticker-text">
+       <b> বাংলাদেশের সবচেয়ে বিশ্বস্ত | সহজে ফ্রিল্যান্সিং | No Investment | 100% Free | Join | Job Start Now | বিশ্বস্ত প্ল্যাটফর্ম - নিরাপদ কাজের নিশ্চয়তা | সহজ উপার্জন - ঘরে বসেই ইনকাম করুন | দক্ষতা উন্নয়ন - শিখুন ও এগিয়ে যান | ২৪/৭ সাপোর্ট - সবসময় পাশে আছি আমরা | Meta Marketing </b>
+      </div>
 
-  <h2 class="income">💰 দৈনিক আয়: ৭০০ – ১৫০০+ টাকা</h2>
+      <!-- দ্বিতীয় টেক্সট (smooth loop করার জন্য একই লেখা আবার) -->
+      <div class="ticker-text">
+       <b> বাংলাদেশের সবচেয়ে বিশ্বস্ত | সহজে ফ্রিল্যান্সিং | No Investment | 100% Free | Join | Job Start Now | বিশ্বস্ত প্ল্যাটফর্ম - নিরাপদ কাজের নিশ্চয়তা | সহজ উপার্জন - ঘরে বসেই ইনকাম করুন | দক্ষতা উন্নয়ন - শিখুন ও এগিয়ে যান | ২৪/৭ সাপোর্ট - সবসময় পাশে আছি আমরা | Meta Marketing </b>
+      </div>
 
-  <div class="features">
-    <p>✅ কোনো ইনভেস্টমেন্ট প্রয়োজন নেই (১০০% ফ্রি)</p>
-    <p>✅ সমস্ত কাজ সহজভাবে শিখিয়ে দেওয়া হবে</p>
-    <p>✅ শুধুমাত্র FB/IG আইডি তৈরি করার সহজ কাজ</p>
-    <p>✅ কাজ শেষে প্রতিদিন নিশ্চিত পেমেন্ট</p>
-    <p>✅ পেমেন্ট: বিকাশ, নগদ, রকেট, OK Wallet, Binance</p>
-  </div><br>
-
-  <h2>🎁 আমাদের পক্ষ থেকে ফ্রি সুবিধা</h2>
-
-  <div class="bonus">
-    <p>🕧 ২৪/৭ লাইভ সাপোর্ট</p>
-    <p>📦 প্রিমিয়াম অ্যাপ, VPN, Proxy, Panel, Bot – সব ফ্রি</p>
-    <p>📚 সম্পূর্ণ গাইডলাইন ও মেথড প্রদান করা হবে</p>
-  </div><br
-
-  <h2>🎓 স্টুডেন্টদের জন্য বিশেষ সুযোগ</h2>
-
-  <div class="students">
-    <p>📖 পড়াশোনার পাশাপাশি আয়</p>
-    <p>⏰ নিজের সময় অনুযায়ী কাজ</p>
-    <p>🚀 সহজভাবে অনলাইনে ইনকাম শুরু</p>
+    </div>
   </div>
 
-  <h3 class="cta-text">
-    🔥 এখনই শুরু করুন – সুযোগ হাতছাড়া করবেন না!
-  </h3>
 
-  <!-- Button -->
-  <button class="contact-btn" onclick="scrollToSocial()">
-    এখনই যুক্ত হোন
-  </button>
+    <!-- 🔹 হোম সেকশন -->
+    <section id="home" class="section">
+        <h1><b>আপনি কি অনলাইনে সত্যিকারের কাজ করে ইনকাম করতে চান?<br>
+তাহলে আপনি একদম সঠিক জায়গায় এসেছেন। </b>
+        </h1>
+        <h2>🔒 আমরা বিশ্বাস করি স্বচ্ছতা ও আস্থায়।<br>
+আপনার পরিশ্রমের মূল্য আপনি অবশ্যই পাবেন।<br>
+👉 এখনই শুরু করুন এবং নিজের সময়কে আয় করার সুযোগে পরিণত করুন! <br>
+📌 বিশেষ দ্রষ্টব্য: এখানে কোনো ইনভেস্টমেন্ট বা লুকানো চার্জ নেই সম্পূর্ণ বিনামূল্যে <br>
+শুধু কাজ করুন এবং উপার্জন করুন।
+        </h2>
+    </section>
 
-</div>
-</section>
+    <!-- 🔹 About -->
+    <section id="about" class="section">
+        <h1>কাজ সম্পর্কে</h1>
+            <h2>💼 কী কাজ করতে হবে?</h2>
+            <b>
+👉 Facebook অথবা Instagram আইডি তৈরি করতে হবে <br>
+👉 আমাদের দেখানো নির্দিষ্ট নিয়ম অনুযায়ী সেটআপ করতে হবে <br>
+👉 আইডি খোলা সম্পন্ন হলে সেই আইডির বিনিময় টাকা পাবেন <br>
+👉 কিভাবে কি করবেন সবকিছু খুব সহজ ভাবে বুঝিয়ে শিখিয়ে দেব, <br>
+✅ কোনো ইনভেস্টমেন্ট প্রয়োজন নেই ১০০% ফ্রী <br>
+✅ সমস্ত কাজ সহজ ভাবে আমরাই শিখিয়ে দেব, <br>
+✅ সহজ কাজ, আমাদের নিয়মে শুধু FB/IG আইডি তৈরি করা <br>
+✅ আইডি জমা দিবেন আর প্রতিদিন ১০০% পেমেন্ট বুঝে নিবেন 💵 <br>
 
-<!-- 🔷 SOCIAL ICON SECTION -->
-<section id="socialSection" class="social-section">
+<h3>💰 পেমেন্ট:💸</h3>
+✔️ প্রতিটি কাজের জন্য নির্দিষ্ট অংকের টাকা পাবেন <br>
+✔️ কাজ ভেরিফাই হলেই দ্রুত পেমেন্ট পেয়ে যাবেন <br>
+💸 পেমেন্ট নিবেন = বিকাশ, রকেট, নগদ, OK Wallet, Binance,<br>
 
-  <h2>টেলিগ্রাম এ জয়েন হোন</h2>
+<h1>😍 এছাড়াও আমাদের পক্ষ থেকে বিনামূল্যে পাচ্ছেন 🤩</h1>
+<h2>
+🕧 ২৪ ঘণ্টা সমস্ত হেল্প সাপোর্ট সাহায্য পাবেন ✅ <br>
+আপনার প্রয়োজনীয় সমস্ত প্রিমিয়াম অ্যাপ্লিকেশন, প্রক্সি আইপি, ভিপিএন, প্যানেল, বট, <br>
+মেথড সহ্‌ আরও যা কিছু প্রয়োজনীয়, সবকিছু আমাদের পক্ষ থেকে ফ্রী তে দেওয়া হবে। </h2>
 
-  <div class="social-container">
+⚡ কোনো অভিজ্ঞতা দরকার নেই <br>
+⚡ কাজ সম্পূর্ণ সহজ এবং দ্রুত করা যায় <br>
+🎓 স্টুডেন্টদের জন্য মহা সু-খবর! <br>
+🎯 পড়াশোনার পাশাপাশি আয় করার দারুণ সুযোগ <br>
+⏰ নিজের সুবিধামতো সময়ে কাজ করুন <br>
+🚀 এই সুবর্ণ সুযোগ হাতছাড়া করবেন না! <br>
+👌এবার সুযোগ আপনার হাতের মুঠোয়! <br> 
+<h3>👇 আগ্রহী হলে এখনই আমাদের টেলিগ্রাম চ্যানেলে জয়েন হোন </h3>
+</b>
+    </section>
 
-    <!-- Facebook --
-    <a href="#" class="social-box">
+    <!-- 🔹 Projects -->
+    <section id="projects" class="section">
+        <h2>🐱‍🏍টেলিগ্রাম এ যোগ দিন👇</h2>
+
+  <!-- সোশ্যাল আইকন সেকশন -->
+  <div id="socialSection" class="social-container">
+
+    <!-- Facebook 
+    <a href="https://facebook.com" target="_blank" class="social-box">
       <i class="fab fa-facebook facebook"></i>
-      <span>Facebook</span>
+      <div>Facebook</div>
     </a>
-
-    !-- WhatsApp --
-    <a href="#" class="social-box">
+    
+    <!-- WhatsApp --
+    <a href="https://wa.me/8801XXXXXXXXX" target="_blank" class="social-box">
       <i class="fab fa-whatsapp whatsapp"></i>
-      <span>WhatsApp</span>
-    </a>-->
-
-    <!-- Telegram -->
-    <a href="https://t.me/Easy_marketing1" target="_blank" class="social-box">
-      <i class="fab fa-telegram telegram"></i>
-      <span>Telegram</span>
-      <span>Join</span>
+      <div>WhatsApp</div>
     </a>
+    -->
 
     <!-- YouTube -->
-    <a href="https://www.youtube.com/@earningsourcebd1" target="_blank" class="social-box">
+    <a href="https://youtube.com/@techbd20n" target="_blank" class="social-box">
       <i class="fab fa-youtube youtube"></i>
-      <span>YouTube</span>
-      <span>Subscribe</span>
+      <div>YouTube</div>
+    </a>
+
+    <!-- Telegram -->
+    <a href="https://t.me/metamarketingy" target="_blank" class="social-box">
+      <i class="fab fa-telegram telegram"></i>
+      <div>Telegram</div>
     </a>
 
     <!-- Gmail --
-    <a href="#" class="social-box">
+    <a href="mailto:your@email.com" class="social-box">
       <i class="fas fa-envelope gmail"></i>
-      <span>Gmail</span>
-    </a>-->
+      <div>Gmail</div>
+    </a>
+    -->
 
   </div>
-</section>
 
-<!-- 🔷 BENEFITS -->
-<section class="benefits">
+        <!-- #region --
+        <div class="card-container">
+            <div class="card">Project 1</div>
+            <div class="card">Project 2</div>
+            <div class="card">Project 3</div>
+        </div> -->
+    </section>
 
-  <h2>কেন এই কাজ করবেন?</h2>
+    <!-- 🔹 Contact --
+    <section id="contact" class="section">
+        <h2>যোগাযোগ করুন</h2>
+        <input type="text" placeholder="আপনার নাম">
+        <input type="email" placeholder="আপনার ইমেইল">
+        <textarea placeholder="আপনার বার্তা"></textarea>
+        <button>Send</button>
+    </section> -->
 
-  <div class="cards">
+    <!-- 🔹 ফুটার -->
+    <footer>
+        <p>© 2026 Meta Marketing</p>
+    </footer>
 
-    <div class="card">
-      <i class="fas fa-money-bill-wave"></i>
-      <h3>ডেইলি ইনকাম</h3>
-      <p>প্রতিদিন কাজ শেষে পেমেন্ট</p>
-    </div>
-
-    <div class="card">
-      <i class="fas fa-clock"></i>
-      <h3>ফ্লেক্সিবল টাইম</h3>
-      <p>নিজের সুবিধামতো কাজ</p>
-    </div>
-
-    <div class="card">
-      <i class="fas fa-graduation-cap"></i>
-      <h3>স্টুডেন্ট ফ্রেন্ডলি</h3>
-      <p>পড়াশোনার পাশাপাশি আয়</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- 🔷 FOOTER -->
-<footer>
-  © 2026 Meta Marketing
-</footer>
-
-<!-- 🔷 JS -->
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
