@@ -1,24 +1,15 @@
-// 🔷 Button click করলে social section এ smooth scroll করবে
-function scrollToSocial(){
-  document.getElementById("socialSection").scrollIntoView({
-    behavior: "smooth"
-  });
+// 🔹 বাটনে ক্লিক করলে মেসেজ দেখাবে
+function showMessage() {
+    alert("ধন্যবাদ! আপনি আমাকে Hire করতে চান 😊");
 }
 
-// 🔷 Scroll animation (card গুলো নিচ থেকে উঠবে)
-window.addEventListener("scroll", () => {
+// 🔹 স্ক্রল করলে ন্যাভবার পরিবর্তন (simple UX effect)
+window.addEventListener("scroll", function () {
+    let header = document.querySelector("header");
 
-  let cards = document.querySelectorAll(".card");
-
-  cards.forEach(card => {
-    let position = card.getBoundingClientRect().top;
-    let screenHeight = window.innerHeight;
-
-    // 🔷 যখন screen এ আসবে তখন show হবে
-    if(position < screenHeight - 50){
-      card.style.opacity = "1";
-      card.style.transform = "translateY(0)";
+    if (window.scrollY > 50) {
+        header.style.background = "#0f172a";
+    } else {
+        header.style.background = "#1e293b";
     }
-  });
-
 });
