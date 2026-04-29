@@ -1,204 +1,150 @@
-/* 🔷 Reset */
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Segoe UI', sans-serif;
+/* 🔹 পুরো পেজের জন্য বেসিক স্টাইল */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
 }
 
-/* 🔷 Body */
-body{
-  background:#0f2027;
-  color:#fff;
+/* 🔹 ন্যাভবার ডিজাইন */
+header {
+    background: #1e293b;
+    color: white;
+    padding: 15px 50px;
 }
 
-/* 🔷 HERO SECTION (Background + Overlay) */
-.hero-section{
-  height: 100vh;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 🔹 সেকশন ডিজাইন */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+    .contact-btn:hover {
+      background: #d0d0ff;
+    }
+
+    /* আইকন গুলো রাখার কন্টেইনার */
+    .social-container {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    /* প্রতিটি আইকনের বক্স */
+    .social-box {
+      background: #fff;
+      padding: 20px;
+      width: 110px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: black;
+      transition: 0.3s;
+    }
+
+    /* hover করলে একটু উঠবে */
+    .social-box:hover {
+      transform: translateY(-5px);
+    }
+
+    /* আইকনের স্টাইল */
+    .social-box i {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+
+    /* আলাদা আলাদা রং */
+    .facebook { color: #1877f2; }
+    .whatsapp { color: #25d366; }
+    .telegram { color: #0088cc; }
+    .youtube { color: #ff0000; }
+    .gmail { color: #ea4335; }
+
+/* 🔹 কার্ড ডিজাইন */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* 🔹 ইনপুট ফিল্ড */
+input, textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 250px;
+}
+
+/* 🔹 ফুটার */
+footer {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* টিকার বক্স (যেখানে লেখা চলবে) */
+.ticker {
   width: 100%;
-  background-image: url('img/mbaner.jpg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  overflow: hidden; /* বাইরে বের হওয়া লেখা লুকাবে */
+  background: #0b5ed7; /* ব্যাকগ্রাউন্ড কালার */
+  color: #fff; /* লেখার রং */
+  padding: 12px 0;
 }
 
-/* 🔷 Overlay */
-.hero-section::after{
-  content:"";
-  position:absolute;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.6);
+/* টেক্সটগুলো এক লাইনে নিয়ে আসা */
+.ticker-track {
+  display: flex;
+  width: max-content; /* কনটেন্ট অনুযায়ী প্রস্থ */
+  animation: scroll 25s linear infinite; /* এনিমেশন চালানো */
 }
 
-/* 🔷 Hero Content */
-.hero{
-  position:relative;
-  z-index:2;
-  height:100%;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:20px;
+/* প্রতিটি টেক্সট ব্লক */
+.ticker-text {
+  white-space: nowrap; /* লেখা ভাঙবে না */
+  font-size: 32px;
+  font-weight: bold;
+  padding-right: 50px; /* দুই টেক্সটের মাঝে gap */
 }
 
-/* 🔷 Heading */
-.hero h1{
-  font-size:48px;
-  margin-bottom:15px;
-}
-
-/* 🔷 Subtitle */
-.subtitle{
-  font-size:20px;
-  color:#ddd;
-  margin-bottom:10px;
-}
-
-/* 🔷 Paragraph */
-.hero p{
-  max-width:600px;
-  line-height:1.7;
-  margin-bottom:15px;
-}
-
-/* 🔷 Income Text */
-.income{
-  color:#00ffcc;
-  font-size:22px;
-  font-weight:bold;
-  margin:15px 0;
-}
-
-/* 🔷 CTA Text */
-.cta-text{
-  color:#ffcc00;
-  margin-bottom:20px;
-}
-
-/* 🔷 Button (Modern Style) */
-.contact-btn{
-  padding:14px 35px;
-  border:none;
-  border-radius:50px;
-  background:linear-gradient(45deg,#00c6ff,#0072ff);
-  font-size:16px;
-  color:#fff;
-  cursor:pointer;
-  box-shadow:0 5px 20px rgba(0,0,0,0.3);
-  transition:0.3s;
-}
-
-.contact-btn:hover{
-  transform:translateY(-3px);
-}
-
-/* 🔷 SOCIAL SECTION (👉 আলাদা করা হয়েছে) */
-.social-section{
-  background:#aaaaaa;
-  color:#000;
-  padding:80px 20px;
-  text-align:center;
-}
-
-/* 🔷 Title */
-.social-section h2{
-  font-size:28px;
-}
-
-/* 🔷 Container */
-.social-container{
-  margin-top:40px;
-  display:flex;
-  justify-content:center;
-  gap:25px;
-  flex-wrap:wrap;
-}
-
-/* 🔷 Box */
-.social-box{
-  width:120px;
-  padding:25px 15px;
-  border-radius:15px;
-  text-decoration:none;
-  background:#ffffff;
-  color:#000;
-  transition:0.3s;
-}
-
-/* 🔷 Hover */
-.social-box:hover{
-  transform:translateY(-10px);
-  box-shadow:0 10px 25px rgba(0,0,0,0.2);
-}
-
-/* 🔷 Icon */
-.social-box i{
-  font-size:35px;
-  margin-bottom:10px;
-}
-
-/* 🔷 Text */
-.social-box span{
-  font-size:14px;
-}
-
-/* 🔷 Colors */
-.facebook{color:#1877f2;}
-.whatsapp{color:#25d366;}
-.telegram{color:#0088cc;}
-.youtube{color:#ff0000;}
-.gmail{color:#ea4335;}
-
-/* 🔷 BENEFITS */
-.benefits{
-  padding:80px 20px;
-  text-align:center;
-  background:linear-gradient(135deg,#203a43,#2c5364);
-}
-
-/* 🔷 Cards */
-.cards{
-  margin-top:40px;
-  display:flex;
-  justify-content:center;
-  gap:25px;
-  flex-wrap:wrap;
-}
-
-/* 🔷 Card */
-.card{
-  width:260px;
-  padding:30px;
-  border-radius:20px;
-  background:rgba(255,255,255,0.08);
-  backdrop-filter:blur(10px);
-  transition:0.3s;
-}
-
-/* 🔷 Hover */
-.card:hover{
-  transform:translateY(-10px);
-}
-
-/* 🔷 Icon */
-.card i{
-  font-size:40px;
-  margin-bottom:10px;
-}
-
-/* 🔷 Footer */
-footer{
-  background:#000;
-  padding:20px;
-  text-align:center;
-}
-
-/* 🔷 Responsive */
-@media(max-width:768px){
-  .hero h1{
-    font-size:30px;
+/* স্ক্রল এনিমেশন */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
   }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* মাউস নিলে (hover) স্ক্রল থেমে যাবে */
+.ticker-track:hover {
+  animation-play-state: paused;
 }
